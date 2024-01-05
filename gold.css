@@ -1,0 +1,248 @@
+:root {
+
+    
+    --bg01: linear-gradient(180deg,
+    #22262A 0%,
+    #181A1D 100%);
+}
+body { 
+    background: var( --bg01);
+    cursor: pointer;
+
+}
+#navs{
+   background-size: cover;
+  background-image: url(https://5.imimg.com/data5/BB/MZ/XM/SELLER-44772448/foreign-exchange-service-500x500.png);
+}
+
+
+#logo-color i img {
+    width: 40px;
+}
+
+.navbar-brand {
+    margin-left: 40px;
+font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 5px 4px rgba(29, 41, 51, 0.85);
+}
+.nav-link:hover {
+    background: #eaf4f4 !important;
+    border: 1px solid #1d3461;
+    color: black;
+    display: flex;
+justify-content: center;
+}
+.nav-link{
+    font-family: 'Times New Roman', Times, serif;   
+    font-weight: 700 !important;
+
+}
+.css{
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.css1{
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2{
+    text-shadow: 0 5px 4px rgba(29, 41, 51, 0.85)
+}
+.navbar-brand:hover {
+    color: rgb(255, 255, 255);
+}
+
+.gold_silver_table {
+    margin: 20px auto;
+    max-width: 800px; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gold_silver_sub_heading_container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.gold_silver_sub_heading_container h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.gold_silver_table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.gold_silver_table table td,
+.gold_silver_table table th {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.gold_silver_table table th {
+    background-color: #f2f2f2;
+}
+.gold_silver_table table td.heading {
+    width: 25%!important;
+}
+.gold_silver_table table td.heading {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 19px;
+    background-color: #1d3461;
+}
+.gold_silver_table table td {
+    font-size: 18px;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gold_silver_table td {
+    height: 50px;
+}
+.gold_silver_table table span {
+    position: relative;
+}
+.gold_silver_lose {
+    color: #ff002e;
+    background: url(https://www.goodreturns.in/images/loss.gif) no-repeat scroll right 0;
+    padding: 0 18px;
+}
+
+.gold_silver_table table tr:hover {
+    background-color: #f5f5f5;
+}
+.gold_silver_table table span {
+    position: relative;
+}
+.gold_silver_lose2 {
+    color: #ff002e;
+}
+.small-font {
+    font-size: 11px!important;
+}
+.gold_silver_gain2{
+    color: green;
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+.chart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+.chart h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #666;
+    text-align: center
+}
+@media (max-width:1115px) {
+    .sidebar {
+        width: 60px;
+    }
+    .main {
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-brand {
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .css,
+    .css1 {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .gold_silver_table table td,
+    .gold_silver_table table th {
+        padding: 10px;
+    }
+
+    .gold_silver_table table td.heading {
+        font-size: 14px;
+    }
+
+    .gold_silver_table table td {
+        font-size: 16px;
+    }
+
+    .charts {
+        grid-template-columns: 1fr;
+    }
+
+    .chart h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .gold_silver_table table td,
+    .gold_silver_table table th {
+        padding: 8px;
+    }
+
+    .gold_silver_table table td.heading {
+        font-size: 12px;
+    }
+
+    .gold_silver_table table td {
+        font-size: 14px;
+    }
+
+    .chart h2 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .circle {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 4rem;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+}
+
+.circle img {
+    width: 8.3rem;
+    height: 8.3rem;
+}
+
+.fcenter {
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 5px 4px rgba(16, 142, 252, 0.85)
+}
+
+.scenter {
+    font-size: 1.9rem;
+    padding: 12px;
+    text-align: center;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px;
+    margin: 10px;
+    border: inset;
+    border-radius: 20px;
+    background: lavender;
+}
+
+#services .box img {
+    height: 120px;
+
+}
+
+#icon {
+    font-size: x-large;
+    color: green;
+}
+
+#services .box p {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.contact {
+    min-height: 30vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/image/buildings-1850129_1280.jpg);
+    background-size: cover;
+}
+
+.contact .content {
+   
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffffff;
+
+}
+
+.contact .innerLayer {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.container .contactinfo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70%;
+    font-size: 32px;
+}
+
+.container .contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactinfo .box .text h3 {
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactform {
+    width: 25%;
+    padding: 30px;
+    background: #b0b0b0;
+    border-radius: 30px;
+}
+
+.contactform h2 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.contactform .inputbox {
+    width: 100px;
+    margin-top: 10px;
+
+}
+
+.contactform .inputbox input {
+    width: 300px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #bd0000;
+    outline: none;
+
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+    width: 300px;
+    padding: 5px 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    border-bottom: 1px solid #333;
+    resize: none;
+}
+
+.contactform .inputbox span {
+    pointer-events: none;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.contactform .inputbox:focus-within span{
+    color: #bd0000;
+}
+.btns {
+    padding: 6px 20px;
+    background-color: #00373e;
+    color: azure;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#ims{
+    width: 50%;
+    height: 100vh;
+}
+.btns:hover {
+    color: rgb(0, 0, 0);
+    transition: 2s ease;
+    background-color: rgb(230, 230, 230);
+}
+
+.contactform .inputbox textarea{
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.contactform .inputbox textarea:focus-within{
+    border: 1px solid #bd0000;
+    outline: none;
+}
+
+.contactform .inputbox input:focus{
+    border-bottom: 1px solid #bd0000;
+}
+
+.contactform .inputbox input .btn {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media screen and (max-width:1338px){
+    .contactform .inputbox input{
+        width: 185%;
+       }
+       .contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 185%;
+}
+    .contactform{
+     width: 202px;
+    }
+}
+
+@media screen and (max-width:1085px){
+    #services {
+        flex-direction: column;
+    }
+    .innerLayer{
+        flex-direction: column;
+    }
+    .contactform .inputbox input{
+        width: 185%;
+       }
+       .contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 185%;
+}
+    .contactform{
+     width: 202px;
+    }
+}
+
+@media screen and (max-width:810px) {
+    #navbar {
+        height: 334px;
+
+    }
+
+    .circle {
+        margin-left: 10rem;
+      
+    }
+    .circle img{
+        margin-left: -6rem;
+      
+       
+      
+        
+    }
+    #navbar ul {
+        padding-top: 20px;
+        padding-left: 17px;
+
+        
+    }
+    #navbar ul li a {
+        margin-left: -1rem;
+    }
+
+    #services {
+        flex-direction: column;
+    }
+    .container{
+        width: 135%
+        
+    }
+    .contactform .inputbox input{
+        width: 200%;
+       }
+       .contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 200%;
+}
+    .contactform{
+     width: 202px;
+    }
+    .innerLayer{
+        flex-direction: column;
+    }
+    #home {
+       height:90vh ;
+    }
+    .contact .content h2{
+        font-size: 20px;
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width:380px){
+    .circle {
+        margin-left: 12rem;
+      
+    }
+    #navbar ul li a {
+        margin-left: -1rem;
+        padding: 3px 12px;
+        flex-direction: row-reverse;
+
+    }
+    .contact .content h2{
+        font-size: 16px;
+        padding-left: 5px;
+    }
+    .container{
+        width: 230%;
+    }
+    .contactform{
+        width: 180%;
+       }
+       .contactform .inputbox input{
+        width: 180%;
+       }
+       .contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 180%;
+}
+
+}
+@media screen and (max-width:500px){
+
+}
