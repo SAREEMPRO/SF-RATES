@@ -6,7 +6,6 @@ const inputAmount = document.querySelector(
 );
 const result = document.querySelector(".converter-container .result");
 const swapBtn = document.querySelector(".converter-container .swap-btn");
-
 const init = async () => {
   try {
     const res = await fetch(`http://www.floatrates.com/daily/usd.json`);
@@ -19,18 +18,18 @@ const init = async () => {
 
         exchangeRates[currencyCode] = currencyInfo.rate;
 
-        const option1 = document.createElement("option");
-        option1.value = code;
-        option1.textContent = `${code} - ${name}`;
+        const option1 = new Option(`${code} - ${name}`, code);
+        const option2 = new Option(`${code} - ${name}`, code);
 
-        const option2 = option1.cloneNode(true);
-
-        fromCurrency.appendChild(option1);
-        toCurrency.appendChild(option2);
+        fromCurrency.add(option1);
+        toCurrency.add(option2);
       }
-      toCurrency.value = toCurrency.options.length > 1 ? toCurrency.options[1].value : toCurrency.value;
 
+      toCurrency.value = toCurrency.options[1].value;
       convert();
+
+      // Initialize Select2 on the select elements
+      $('.select-container select').select2();
     }
   } catch (error) {
     console.log("Error loading currency data");
