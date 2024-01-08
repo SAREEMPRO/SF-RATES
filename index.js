@@ -13,33 +13,31 @@ const init = async () => {
     const data = await res.json();
 
     if (res.ok) {
-      console.log(data);  // Check if data is fetched correctly
-
       for (const currencyCode in data) {
         const currencyInfo = data[currencyCode];
         const { code, name } = currencyInfo;
 
         exchangeRates[currencyCode] = currencyInfo.rate;
 
-        const option1 = new Option(`${code} - ${name}`, code);
-        const option2 = new Option(`${code} - ${name}`, code);
+        const option1 = document.createElement("option");
+        option1.value = code;
+        option1.textContent = `${code} - ${name}`;
 
-        fromCurrency.add(option1);
-        toCurrency.add(option2);
+        const option2 = option1.cloneNode(true);
+
+        fromCurrency.appendChild(option1);
+        toCurrency.appendChild(option2);
       }
+      toCurrency.value = toCurrency.options.length > 1 ? toCurrency.options[1].value : toCurrency.value;
 
-      toCurrency.value = toCurrency.options[1].value;
       convert();
-
-      // Initialize Select2 on the select elements
-      $('.select-container select').select2();
     }
   } catch (error) {
-    console.log("Error loading currency data", error);
+    console.log("Error loading currency data");
   }
 };
 
-
+init();
 
 const convert = () => {
   const inputValue = parseFloat(inputAmount.value);
