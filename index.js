@@ -6,12 +6,15 @@ const inputAmount = document.querySelector(
 );
 const result = document.querySelector(".converter-container .result");
 const swapBtn = document.querySelector(".converter-container .swap-btn");
+
 const init = async () => {
   try {
     const res = await fetch(`http://www.floatrates.com/daily/usd.json`);
     const data = await res.json();
 
     if (res.ok) {
+      console.log(data);  // Check if data is fetched correctly
+
       for (const currencyCode in data) {
         const currencyInfo = data[currencyCode];
         const { code, name } = currencyInfo;
@@ -32,11 +35,11 @@ const init = async () => {
       $('.select-container select').select2();
     }
   } catch (error) {
-    console.log("Error loading currency data");
+    console.log("Error loading currency data", error);
   }
 };
 
-init();
+
 
 const convert = () => {
   const inputValue = parseFloat(inputAmount.value);
