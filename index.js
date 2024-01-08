@@ -28,8 +28,8 @@ const init = async () => {
         fromCurrency.appendChild(option1);
         toCurrency.appendChild(option2);
       }
+      toCurrency.value = toCurrency.options.length > 1 ? toCurrency.options[1].value : toCurrency.value;
 
-      toCurrency.value = toCurrency.options[1].value;
       convert();
     }
   } catch (error) {
