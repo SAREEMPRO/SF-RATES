@@ -68,13 +68,16 @@ swapBtn.addEventListener("click", () => {
 
   convert();
 });
-document.addEventListener('DOMContentLoaded', function () {
-  var selects = document.querySelectorAll('.select-container select');
 
-  selects.forEach(function (select) {
-      select.addEventListener('change', function () {
-          // Handle the change event as needed
-          console.log('Selected value:', this.value);
-      });
-  });
-});
+    // JavaScript to handle custom dropdown behavior
+    document.addEventListener('DOMContentLoaded', function () {
+        var dropdowns = document.querySelectorAll('.custom-dropdown');
+
+        dropdowns.forEach(function (dropdown) {
+            dropdown.addEventListener('change', function () {
+                // Handle the change event as needed
+                console.log('Selected value:', this.value);
+            });
+        });
+    });
+
